@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark Manager</title>
+  </head>
+  <body>
+    <header>Bookmark Manager<button class="button-add">+Add</button></header>
+
+    <!--ダイアログ-->
+    <dialog class="add-modal">
+      <form class="form-add">
+        <section>
+          <h3>Add new bookmark</h3>
+          <label for="input-title">Title</label>
+          <input type="text" id="input-title" required />
+          <br />
+          <label for="input-url">URL</label>
+          <input type="url" id="input-url" required />
+        </section>
+
+        <button class="form-button-save" type="submit">Save</button>
+      </form>
+      <button class="form-button-cancel">Cancel</button>
+    </dialog>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
