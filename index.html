@@ -8,7 +8,7 @@
   <body>
     <header>Bookmark Manager<button class="button-add">+Add</button></header>
 
-    <!--ダイアログ-->
+    <!--追加時のモーダル-->
     <dialog class="add-modal">
       <form class="form-add">
         <section>
@@ -25,7 +25,31 @@
       <button class="form-button-cancel">Cancel</button>
     </dialog>
 
-    
+    <!--編集時のモーダル-->
+    <dialog class="edit-modal">
+      <form class="form-edit">
+        <section>
+          <h4>Edit Bookmark</h4>
+          <label for="input-edit-title">Title</label>
+          <input type="text" id="input-edit-title" />
+          <br />
+          <label for="input-edit-url">URL</label>
+          <input type="url" id="input-edit-url" />
+        </section>
+        <button class="form-button-edit-save" type="submit">Save</button>
+      </form>
+      <button class="form-button-edit-cancel">Cancel</button>
+    </dialog>
+
+    <!--削除時のモーダル-->
+    <dialog class="delete-modal">
+      <section>
+        <h4>Delete Bookmark...?</h4>
+      </section>
+      <button class="form-button-delete">Delete</button>
+      <button class="form-button-delete-cancel">Cancel</button>
+    </dialog>
+
     <section class="bookmark-list"></section>
     <script src="./app.js"></script>
   </body>
